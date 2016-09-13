@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Haiku generator</title>
+    <script src="libraries/p5.js" type="text/javascript"></script>
+
+    <script src="libraries/p5.dom.js" type="text/javascript"></script>
+    <script src="libraries/p5.sound.js" type="text/javascript"></script>
+
+    <script src="sketch.js" type="text/javascript"></script>
+    <script src="syllable.js" type="text/javascript"></script>
+    <script src="haiku.js" type="text/javascript"></script>
+
+    <style>
+        body {padding: 0; margin: 0;} canvas {vertical-align: top;}
+        #haiku {text-align: center;}
+        div {text-align: center;}
+        img {height: 150px}
+    </style>
+  </head>
+  
+  <body>
+    <div>
+        <h1><img src="rainbow_cthulhu.jpg">
+        Haiku generator
+        <img src="mountain_unicorn.jpg"></h1>
+    </div>
+    <p>This is a modification of a diastic word generator, so that the output takes the form of a <a href="https://en.wikipedia.org/wiki/Haiku">haiku</a> poem.
+    The source text is <a href="https://en.wikipedia.org/wiki/H._P._Lovecraft">H. P. Lovecraft</a>'s <a href="https://en.wikipedia.org/wiki/At_the_Mountains_of_Madness">At the Mountains of Madness</a>.<p>
+
+    <p>Diastic means, that the first word in the haiku must contain the first letter of the seed.
+    The second word must contain the second letter of the seed and so on.<br/>
+    In addition to this, words are chosen to conform to the classic haiku structure.<br/>
+    I.e. 5 syllables in the first line, 7 syllables in the second line, and yet again 5 syllables in the last line.<br/>
+    If the seed is not long enough to provide sufficient words to complete the haiku, it starts over from the first letter.<br/>
+    Unfortunately, this procedure does not guarantee the presence of a <a href="https://en.wikipedia.org/wiki/Haiku#Kigo">kigo</a>,
+    the traditional seasonal indicator.</p>
+    
+    <h2>Seed</h2>
+    <p id="seed"></p>
+    
+    <h2>Haiku</h2>
+    <p id="haiku"></p>
+  </body>
+</html>
