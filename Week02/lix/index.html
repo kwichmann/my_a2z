@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>LIX calculator</title>
+    <script src="libraries/p5.js" type="text/javascript"></script>
+    <script src="libraries/p5.dom.js" type="text/javascript"></script>
+    <script src="sketch.js" type="text/javascript"></script>
+
+    <style> body {padding: 0; margin: 0;} canvas {vertical-align: top;} </style>
+  </head>
+  
+  <body>
+    <h1>LIX calculator</h1>
+    <p>
+      <a href="https://en.wikipedia.org/wiki/LIX">LIX</a> is a
+      <a href="https://en.wikipedia.org/wiki/Readability_test">readability measure</a>
+      commonly used in Scandinavia. The higher the LIX rating, the harder the text is considered to be.
+    </p>
+  
+    <h2>Enter you text below</h2>
+    <textarea id="getText" autofocus rows="12" cols="80">Der var så dejligt ude på landet; det var sommer, kornet stod gult, havren grøn, høet var rejst i stakke nede i de grønne enge, og der gik storken på sine lange, røde ben og snakkede ægyptisk, for det sprog havde han lært af sin moder. Rundt om ager og eng var der store skove, og midt i skovene dybe søer; jo, der var rigtignok dejligt derude på landet! Midt i solskinnet lå der en gammel herregård med dybe kanaler rundt om, og fra muren og ned til vandet voksede store skræppeblade, der var så høje, at små børn kunne stå oprejste under de største; der var lige så vildsomt derinde, som i den tykkeste skov, og her lå en and på sin rede; hun skulle ruge sine små ællinger ud, men nu var hun næsten ked af det, fordi det varede så længe, og hun sjælden fik visit; de andre ænder holdt mere af at svømme om i kanalerne, end at løbe op og sidde under et skræppeblad for at snadre med hende.
+    </textarea>
+    <br/>
+    <button id ="calcLIX" type="button">Click to calculate LIX</button>
+    
+    <h2>LIX score and readability</h2>
+    <p id="LIX"></p>
+    <p id="readability"></p>
+  </body>
+</html>
